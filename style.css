@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.portfolio-sections{
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+   
+    background-color: white;
+}
+.navigation-bar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    
+}
+.portfolio-sections h1{
+    margin-top: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main-container{
+    top:50px;
+    position: relative;
+}
+.brand{
+    font-size: 30px;
+    font-family: Arial Black;
+    font-variant: small-caps;
+    color: orangered;
+    position: relative;
+    transition-duration: 1s;
+}
+.brand:hover{
+			color: transparent;
+			-webkit-text-stroke:1px orangered;
+		}
+.navmenu{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 15px;
+}
+.navmenu:hover{
+    text-decoration: underline 2px solid black;
+    text-underline-offset: 6px;
+    
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+#home{
+   height: 670px;
+   background-image: url("https://gomycode.com/wp-content/uploads/2023/09/39998-web-development.gif");
+   background-repeat: no-repeat;
+   background-size:25%;
+   background-position:90% 20%;
+   border: none;
+}
+
+#home-info{
+    position: absolute;
+    top: 80px;
+    width: 400px;
+    height: 250px;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.info{
+    font-weight: bolder;
+    color: lightslategray;
+}
+.designation{
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.myname{
+    font-size: 35px;
+}
+.rsmbtn{
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size:15px;
+    font-weight: bolder;
+    background-color: royalblue;
+    color: white;
+    transition-duration: 1s;
+    
+}
+.rsmbtn:hover{
+    background-color: white;
+    color: royalblue;
+    border: 3px solid royalblue;
+   
+    transform: scale(1.1);
+}
+.about-section{
+	height: 500px;
+	width: 100%;
+	background-color: whitesmoke;
+	border: none;
+}
+.aboutmain{
+	height: 600px;
+	width: 100%;
+	display: flex;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+.aboutmain div{
+	height: 700px;
+	
+}
+.minion{
+	margin-top: 100px;
+	margin-left: 90px;
+	animation-duration: 4s;
+	animation-name:zoom;
+	animation-iteration-count: 5;
+}
+@keyframes zoom{
+	100%{
+		transform: scale(1.2);
+		border-radius:60px ;
+	}
+}
+.heading{
+	font-family: Arial Black;
+	text-align: center;
+	margin: 30px 0px;
+	font-size: 40px;
+	color: royalblue;
+}
+.carrerobj{
+	padding: 30px;
+}
+.carrerinfo{
+	text-align: justify;
+	line-height: 40px;
+	text-indent: 100px;
+	word-spacing: 7px;
+	letter-spacing: 1px;
+	padding-left: 20px;
+}
+#skills {
+    height: 700px;
+    width: 100%;
+    background-color: aqua; 
+}
+.tbl{
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-inline: 15%;
+}
+.tbl tr td{
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px royalblue;
+    transition-duration: 1.5s;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+.skills-subheading{
+    color: darkgreen;
+    font-family: yaldevi;
+    font-weight: bolder;
+    font-size: 25px;
+    font-variant: small-caps;
+
+}
+.detailedSkills{
+    font-size: 23px;
+    font-weight: bolder;
+    font-color: black;
+    line-height:40px;
+    word-spacing: 3px;
+    margin-top:20px;
+}
+
+.yaldevi-<uniquifier> {
+  font-family: "Yaldevi", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.neucha-regular {
+  font-family: "Neucha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.tbl tr td:hover{
+	transform: scale(1.05);
+	box-shadow: 10px 15px 10px grey;
+}
+
+#project{
+	height: 660px;
+	width: 100%;
+	padding: 10px;
+}
+.project-card-container{
+	padding: 20px;
+	
+}
+.card-title{
+	color: orangered;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+.card-title:hover{
+	text-decoration: underline 2px solid orangered;
+	text-underline-offset: 5px;
+	cursor: pointer;
+}
+.card-img-top{
+    
+    padding-top: 20px;
+    height: 320px;
+    width: 400px;
+}
+.card-group{
+    padding-left: 40px;
+}
+a{
+    text-decoration: none;
+    color: orangered;
+
+}
+#contact{
+    height: 560px;
+    width: 100%;
+    text-align: left;
+    background-color: aliceblue;
+    padding: 20px;
+    border: none;
+}
+
+.main-container2{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+
+}
+
+.contact-child{
+    height: 400px;
+    width: 50%;
+}
+
+.contact-info{
+    font-size: 18px;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    margin-top: 70px;
+}
+.contact-info li{
+    margin-top: 20px;
+}
+
+.contact-form{
+    padding: 15px;
+    padding-left: 70px;
+    margin-top: 50px;
+}
+
+#footer{
+    
+    height: 50px;
+    width: 100%;
+    background-color: royalblue;
+    text-align: center;
+}
+
+#footerinfo{
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+}

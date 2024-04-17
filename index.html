@@ -1,13 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/512/686/686165.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Paras Portfolio</title>
 </head>
 <body>
-	<h1>Hello World!!</h1>
-	<h2>My name is Paras</h2>
+    <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <a class="navbar-brand" href="#" ><span class="brand tracking-in-expand">Paras Shah</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home"><span class="navmenu">Home</span> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about"><span class="navmenu">About</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills"><span class="navmenu">Skills</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#project"><span class="navmenu">Projects</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact"><span class="navmenu">Contact</span></a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <!-- nav bar ends here -->
+   <div class="main-container">
+    <section id="home" class="portfolio-sections">
+        <div id="home-info">
+            <span class="info">Hello!!! </span><br/>
+            <span class="info">My name is... </span><br>
+            <span class="brand myname tracking-in-expand">PARAS SHAH</span><br>
+            <span class="info">I am <span class="designation">Full Stack Developer</span></span>
+            <button href="demo.pdf" class="rsmbtn">RESUME</button>
+        </div>
+    </section>
+    <section id="about" class="portfolio-sections">
+        <div class="aboutmain">
+        <div class="myimage">
+                <img class="minion kenburns-bottom" src="C:\Users\PARAS\OneDrive\Desktop\new_portfolio\parasphoto.jpg" height="300" width="400">
+            </div>
+            <div class="carrerobj">
+                <h1 class="heading">ABOUT</h1>
+                <p class="carrerinfo">
+                    Seeking a challenging position in an organization 
+                    where I can use my talents and skills to grow 
+                    and expand an organization as well as myself.
+                </p>
+        </div>
+        </div>
+    </section>
+    <!--skills page starts here-->
 
+
+    <section id="skills" class="portfolio-sections skill-section">
+   <h1 class="heading" style="text-align: center; margin-left: 20%;margin-right: 20%">SKILLS</h1>
+   <table class="tbl" height="300px" width="70%" cellspacing="50px">
+    <!-- row one starts from here-->
+
+    <tr align="center" valign="top">
+        <td width="50%" data-aos="slide-right">
+            <div class="borderskills">
+                <h2 class="skills-subheading">Languages</h2>
+                <p class="detailedSkills">
+                    Core Java, C, C++, Python, C#, JavaScript, HTML, CSS, SQL
+                </p>
+            </div>
+        </td>
+
+        <td data-aos ="slide-left">
+            <div class="borderskills">
+                <h2 class="skills-subheading">API's and Frameworks</h2>
+                <p class="detailedSkills">
+                    Collection, Streams API, Rest API, Spring, Hibernates, Servlets, JDBC, SpringBoot, Spring MVC, JSP, ReactJS.
+                </p>
+            </div>
+        </td>
+    </tr>
+    <!-- row one ends here-->
+
+    <tr align="center" valign="top">
+        <td width="50%" data-aos="slide-right">
+            <div class="borderskills">
+                <h2 class="skills-subheading">Tools</h2>
+                <p class="detailedSkills">
+                    VS Code, Eclipse IDE, Git, Github, Netbeans, Postman, MySQL, Workbench, Maven, Tomcat, MongoDB.
+                </p>
+            </div>
+        </td>
+
+        <td data-aos ="slide-left">
+            <div class="borderskills">
+                <h2 class="skills-subheading">Operating Systems</h2>
+                <p class="detailedSkills">
+                    Windows, Android, Linux, Ubuntu, Solaris.
+                </p>
+            </div>
+        </td>
+    </tr>
+</table>
+
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000
+        });
+    </script>
+
+    <section id="project" class="portfolio-sections">
+        <h1 class="heading">PROJECTS</h1>
+        <div class="project-card-container">
+            <div class="card-deck">
+<div class="card-group">
+  <div class="card">
+    <img src="https://user-images.githubusercontent.com/56729873/85330421-00feb800-b4f2-11ea-8e91-2d46bd977d5f.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">ATM SIMULATOR</h5>
+      <p class="card-text"><ul>
+          <li>Frontend: JAVA AWT</li>
+          <li>Backend: JAVA,MYSQL</li>
+      </ul></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="C:\Users\PARAS\OneDrive\Desktop\portfolio_paras\logo.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><a href="https://github.com/Davidcage1/BloodBond1" target="blank">BLOODBOND APPLICATION</a></h5>
+      <p class="card-text"><ul>
+          <li>Frontend: XML</li>
+          <li>Backend: JAVA,Firebase</li>
+      </ul></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="C:\Users\PARAS\OneDrive\Desktop\SnapBust\snapburstlogo.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><a href="https://github.com/Davidcage1/ATMSIMULATOR">SnapBurst</a></h5>
+      <p class="card-text">
+          <ul>
+              <li>Frontend: XML</li>
+              <li>Backend: JAVA,Firebase</li>
+          </ul>
+      </p>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="portfolio-sections">
+        <h1 class="heading">CONTACT</h1>
+        <div class="main-container2">
+            <div class="contact-child">
+                <ul class="contact-info" type="none">
+                    <li>&#x1F449; parasshah828@gmail.com</li>
+                    <li>&#x1F449; 9623357360</li>
+                    <li>&#x1F449; <a href="https://github.com/Davidcage1">github </a></li>
+                    <li>&#x1F449; <a href="https://www.linkedin.com/in/paras-shaha">Linkedin</a></li>
+                    <li>&#x1F449; Pune, Maharashtra</li>
+                    
+                </ul>
+                
+            </div>
+            <div class="contact-child contact-form">
+                <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Comment</label>
+    <textarea class="form-control" id="exampleInputPassword1"></textarea>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+                
+            </div>
+            
+        </div>
+    </section>
+    <section id="footer">
+        <h1 id="footerinfo">Made By &#169 Paras 2024</h1>
+    </section>
+
+   </div>
+
+
+</section>
+</div>
+
+</section>
+    
 </body>
 </html>
